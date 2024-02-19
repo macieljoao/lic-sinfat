@@ -1,0 +1,23 @@
+default:
+  pacotes:
+    - dplyr
+    - magrittr
+    - readr
+    - lubridate
+    - stringr
+    - sf
+    - tmap
+
+  leitura_dados:
+    caminho: "data/bruto/dados_sinfat.csv"
+    delimiter: ";"
+    quote: "\""
+    encoding: "latin1"
+    skip: 1
+
+  caminhos:
+    nomes_colunas: "config/nomes_colunas.csv"
+    grupo_codigos: "config/grupo_codigos.csv"
+    siglas_lic: "config/siglas_lic.csv"
+    siglas_analistas: "config/siglas_analistas.csv"
+    siglas_grupo: "config/siglas_grupo.csv"
