@@ -133,6 +133,15 @@ formatar_cnpj <- function(df) {
   return(df_formatado)
 }
 
+# 01.28 Encurtar valores de `descricao_consema`
+
+encurtar_descricao <- function(df) {
+  df_formatado <- df %>%
+    mutate(descricao_consema = str_extract(descricao_consema, "^[^,:(]+")) %>%
+    mutate(descricao_consema = str_replace(descricao_consema, "\\bonde\\b.*", ""))
+  return(df_formatado)
+}
+
 ####
 # 01.30 Funções para filtrar valores de var. ----
 ####

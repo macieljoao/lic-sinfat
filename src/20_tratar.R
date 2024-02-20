@@ -12,6 +12,7 @@ df <- df_pre_processado %>%
   formatar_datas() %>%
   formatar_cnpj() %>%
   capitalizar_descricao() %>%
+  encurtar_descricao() %>%
   capitalizar_enderecos() %>%
   capitalizar_razao_social() %>%
   formatar_cep() %>%
