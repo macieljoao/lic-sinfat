@@ -10,9 +10,9 @@ default:
 
   leitura_dados:
     caminho: "data/bruto/dados_sinfat.csv"
-    delimiter: ";"
+    delimiter: ","
     quote: "\""
-    encoding: "latin1"
+    encoding: "utf8"
     skip: 1
 
   caminhos:
